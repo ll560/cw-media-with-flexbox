@@ -23,18 +23,24 @@ main > p {
 /* Flexbox */
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 /* ADD YOUR CODE BELOW */
+
+
 @media screen and (min-width:600px){
+    body{
+        flex-direction:row;
+    }
+
     header{
-        flex-grow: 1;
+        flex: 1;
     }
 }
 
 @media screen and (min-width:600px){
     main{
-        flex-grow: 4;
+        flex: 3;
     }
 }
